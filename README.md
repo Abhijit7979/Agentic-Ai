@@ -4,7 +4,7 @@
 ![](images/img11.jpeg)
 
 Above image is work flow of Agentic AI solution designed to build a Finance Chatbot using the Phidata framework and open-source LLMs deployed on Groq. The chatbot leverages tools like DuckDuckGo for web search and YFinance for real-time financial data. It uses multiple agents, including a Web Agent for fetching up-to-date information and a Finance Agent for retrieving stock market insights, analyst recommendations, and financial news. 
-Models: llama-3.1-8b-instan with CONTEXT WINDOW - 128K and deepseek-r1-distill-llama-70b with CONTEXT WINDOW - 128K.
+* Models: llama-3.1-8b-instan with CONTEXT WINDOW - 128K and deepseek-r1-distill-llama-70b with CONTEXT WINDOW - 128K.
 
 # Steps to run the Agent 
   ## Step 1: setup the environment 💻
