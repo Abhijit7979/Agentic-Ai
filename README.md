@@ -44,3 +44,25 @@ python Agent_team.py
  <img src="images/img33.png" alt="Output" width="600"  />
 - web agent :  This agent summarize the website given by the user using the tool WebsiteTools.
   <img src="images/img4.png" alt="Output" width="600"  />
+
+## Agent Function 
+```bash
+from phi.agent import Agent
+from phi.model.groq import Groq
+
+agent = Agent(
+    name="Agent name"
+    model=Groq(id="model_name"),
+    tools=[],
+    description="",
+    instructions=[],
+    markdown=True,
+    show_tool_calls=True,
+    add_datetime_to_instructions=True,
+    # debug_mode=True,
+)
+```
+model -->  We can you  models from platforms like openai ,aws ,Groq 
+tools --> Tools are functions the model may generate JSON inputs for.
+description ,instructions -->  instruction prompts to the model.
+show_tool_calls --> Print the signature of the tool calls in the Model response.
