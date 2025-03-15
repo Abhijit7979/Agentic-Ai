@@ -41,9 +41,10 @@ python Agent_team.py
 
 ## Agents 
 - Data analyst :  The user give .csv file as input and  using  DuckDbTool to store the data in SQL format and query the data.
- <img src="images/img33.png" alt="Output" width="600"  />
+<img src="images/img33.png" alt="Output" width="600"/>
+
 - web agent :  This agent summarize the website given by the user using the tool WebsiteTools.
-  <img src="images/img4.png" alt="Output" width="600"  />
+<img src="images/img4.png" alt="Output" width="600"/>
 
 ## Agent Function 
 ```bash
