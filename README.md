@@ -63,7 +63,7 @@ agent = Agent(
     # debug_mode=True,
 )
 ```
-- model -->  We can you  models from platforms like openai ,aws ,Groq 
+- model -->  We can use  llm models from platforms like openai ,aws ,Groq 
 - tools --> Tools are functions the model may generate JSON inputs for.
 - description ,instructions -->  instruction prompts to the model.
 - show_tool_calls --> Print the signature of the tool calls in the Model response.
