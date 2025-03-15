@@ -66,3 +66,26 @@ agent = Agent(
 - tools --> Tools are functions the model may generate JSON inputs for.
 - description ,instructions -->  instruction prompts to the model.
 - show_tool_calls --> Print the signature of the tool calls in the Model response.
+
+## Create custom tools
+```bash
+def get_company_symbol(company:str)-> str:
+    '''use this fuction to get the symbol for a company.
+    Args:
+        company (str): The name of the comapny.
+
+    Returns: 
+        str : the symbol for the company.
+    '''
+    company=company.lower()
+    symbols= {
+        "infosys":"INFY",
+        "tesla":"TSLA",
+        "apple":"AAPL",
+        "microsoft":"MSFT",
+        "google":"GOOGL",
+    }
+    return symbols.get(company,"Unknown")
+```
+To create a custom tool, consider the implementation of YFinanceTool in the Agent_team.py file as an example. This tool retrieves stock information, but it requires the correct stock symbol. If a user provides a company name instead of a symbol, the get_company_symbol function converts the name into its corresponding stock symbol and passes it to YFinanceTool for further processing.
+When developing a custom tool, it is essential to include a docstring within the function. The docstring should clearly describe the tool’s functionality. Based on the Docstring the llm present in the agent decides to use the tool or not.
