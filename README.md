@@ -17,8 +17,8 @@ conda activate AgenticAI
   create .env file add Api keys of phidata , groq, openai
 ```bash
 GROQ_API_KEY="API_key"
-PHI_API_KEY ="API_ke"
-OPENAI_API_KEY="API_ke"
+PHI_API_KEY ="API_key"
+OPENAI_API_KEY="API_key"
 ```
 
   ##  Step 2: navigate to Agent_team.py 🏃‍♂️
