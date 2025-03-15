@@ -6,7 +6,7 @@
 Above image is work flow of Agentic AI solution designed to build a Finance Chatbot using the Phidata framework and open-source LLMs deployed on Groq. The chatbot leverages tools like DuckDuckGo for web search and YFinance for real-time financial data. It uses multiple agents, including a Web Agent for fetching up-to-date information and a Finance Agent for retrieving stock market insights, analyst recommendations, and financial news. 
 Models: llama-3.1-8b-instan with CONTEXT WINDOW - 128K and deepseek-r1-distill-llama-70b with CONTEXT WINDOW - 128K.
 
-# Steps to run the model 
+# Steps to run the Agent 
   ## Step 1: setup the environment 💻
 ```bash
 git clone https://github.com/Abhijit7979/Agentic-Ai.git
@@ -62,7 +62,7 @@ agent = Agent(
     # debug_mode=True,
 )
 ```
-model -->  We can you  models from platforms like openai ,aws ,Groq 
-tools --> Tools are functions the model may generate JSON inputs for.
-description ,instructions -->  instruction prompts to the model.
-show_tool_calls --> Print the signature of the tool calls in the Model response.
+- model -->  We can you  models from platforms like openai ,aws ,Groq 
+- tools --> Tools are functions the model may generate JSON inputs for.
+- description ,instructions -->  instruction prompts to the model.
+- show_tool_calls --> Print the signature of the tool calls in the Model response.
